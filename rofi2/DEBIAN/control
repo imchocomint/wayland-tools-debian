@@ -1,0 +1,12 @@
+Package: rofi2
+Version: 2.0.0
+Architecture: amd64
+Maintainer: Tran Thien Minh <mintgaming@outlook.com.vn>
+Depends: libc6 (>= 2.34), libcairo2 (>= 1.12.0), libgdk-pixbuf-2.0-0 (>= 2.31.1), libglib2.0-0t64 (>= 2.75.3), libpango-1.0-0 (>= 1.50.3), libpangocairo-1.0-0 (>= 1.22.0), libstartup-notification0 (>= 0.11), libxcb-cursor0 (>= 0.0.99), libxcb-ewmh2 (>= 0.4.1), libxcb-icccm4 (>= 0.4.1), libxcb-randr0 (>= 1.12), libxcb-util1 (>= 0.4.0), libxcb-xinerama0, libxcb-xkb1, libxcb1, libxkbcommon-x11-0 (>= 0.5.0), libxkbcommon0 (>= 0.7.0)
+Section: x11
+Priority: optional
+Homepage: https://github.com/davatorium/rofi
+Description: window switcher, run dialog and dmenu replacement
+ rofi can act as an application launcher, window switcher, ssh launcher and
+ dmenu replacement.
+Conflicts: rofi
