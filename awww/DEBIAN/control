@@ -1,0 +1,10 @@
+Package: awww
+Architecture: amd64
+Priority: optional
+Maintainer: Tran Thien Minh <tranthienminh2008@gmail.com>
+Depends: lz4, wayland-protocols
+Section: x11
+Provides: awww
+Description: Wayland native wallpaper daemon
+Conflicts: swww
+Version: 0.11.2

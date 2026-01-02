@@ -3,6 +3,7 @@ Since Debian don't have much Wayland utilities prepackaged, I'll try to pack up 
 
 ## Currently packaged
 - rofi (as rofi2), a launcher. Since version 2.0.0 has merged all the Wayland features to the main codebase; Debian version is not yet updated. Prebuilt binaries from Arch Linux package.
+- awww, swww but renamed as creator's wish. Prebuilt binary from my machine.
 
 ## Planned
 - yazi, a TUI file manager. Easily installable from cargo.
