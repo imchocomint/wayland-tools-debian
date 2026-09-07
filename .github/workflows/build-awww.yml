@@ -29,6 +29,6 @@ jobs:
           # Explicitly set the tag using the workflow_dispatch input
           tag_name: ${{ github.event.inputs.tag }}
           # Use a wildcard so it automatically matches whatever the ISO is named
-          files: *.deb
+          files: awww.deb
           body: |
             AWWW GH Actions build
