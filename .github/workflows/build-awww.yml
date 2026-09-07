@@ -21,7 +21,7 @@ jobs:
 
       - name: Run build script
         run: |
-          apt install wget
+          sudo apt install wget
           bash awww-build.sh
 
       - name: Upload to Release Action
