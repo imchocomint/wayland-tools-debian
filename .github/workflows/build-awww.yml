@@ -23,15 +23,12 @@ jobs:
         run: |
           sudo apt install wget
           bash awww-build.sh
-
-      - name: Upload to Release Action
-        uses: Shopify/upload-to-release@v2.0.0
+      - name: Generate Release
+        uses: softprops/action-gh-release@v3
         with:
-          # Artifact name
-          name: 
-            awww.deb
-          path: 
-          # Content type for the file
-          content-type: # optional, default is application/octet-stream
-          # secrets.GITHUB_TOKEN
-          repo-token: ${{ secrets.RELEASE_TOKEN }}
+          # Explicitly set the tag using the workflow_dispatch input
+          tag_name: ${{ github.event.inputs.tag }}
+          # Use a wildcard so it automatically matches whatever the ISO is named
+          files: *.deb
+          body: |
+            AWWW GH Actions build
